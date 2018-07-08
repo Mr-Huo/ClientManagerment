@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<web-app version="2.5"   
+    xmlns="http://java.sun.com/xml/ns/javaee"   
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">     
+
+ <!-- 配置负责插入的servlet -->
+  <servlet>   
+    <servlet-name>SelectServlet</servlet-name>  
+    <servlet-class>servlet.SelectServlet</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+    <servlet-name>SelectServlet</servlet-name>    
+    <url-pattern>/SelectServlet/*</url-pattern>  
+  </servlet-mapping>   
+  
+  <!-- 配置负责删除的servlet -->
+  <servlet>   
+    <servlet-name>DeleteServlet</servlet-name>  
+    <servlet-class>servlet.DeleteServlet</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+    <servlet-name>DeleteServlet</servlet-name>    
+    <url-pattern>/DeleteServlet</url-pattern>  
+  </servlet-mapping>  
+  
+    <!-- 配置负责添加的servlet -->
+  <servlet>   
+    <servlet-name>AddServlet</servlet-name>  
+    <servlet-class>servlet.AddServlet</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+    <servlet-name>AddServlet</servlet-name>    
+    <url-pattern>/AddServlet</url-pattern>  
+  </servlet-mapping>  
+  
+    <!-- 配置负责更新的servlet -->
+  <servlet>   
+    <servlet-name>UpdateServlet</servlet-name>  
+    <servlet-class>servlet.UpdateServlet</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+    <servlet-name>UpdateServlet</servlet-name>    
+    <url-pattern>/UpdateServlet</url-pattern>  
+  </servlet-mapping>  
+  
+      <!-- 配置负责推荐的servlet -->
+  <servlet>   
+    <servlet-name>RecommendServlet</servlet-name>  
+    <servlet-class>servlet.RecommendServlet</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+    <servlet-name>RecommendServlet</servlet-name>    
+    <url-pattern>/RecommendServlet</url-pattern>  
+  </servlet-mapping> 
+    
+</web-app>   
